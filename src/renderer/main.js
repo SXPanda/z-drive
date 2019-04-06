@@ -2,8 +2,10 @@ import Vue from 'vue';
 import axios from 'axios';
 
 import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
 import '@/assets/core.scss';
+import '@/assets/variables.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import App from './App';
 import router from './router';
@@ -14,6 +16,8 @@ Vue.http = Vue.prototype.$http = axios;
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
+
+Vue.component('fai', FontAwesomeIcon);
 
 /* eslint-disable no-new */
 new Vue({

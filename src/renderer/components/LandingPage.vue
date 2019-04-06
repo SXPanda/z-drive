@@ -28,7 +28,6 @@
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom, rgba(168,35,68,1) 0%,rgba(68,14,54,1) 100%)
 }
 
 .focus-card {
