@@ -3,7 +3,11 @@
     <el-card class="focus-card">
       <div>
         <img src="@/assets/third-party/logo_lockup_cloud_rgb.png" />
-        <el-input class="mb-3" placeholder="Bucket name"></el-input>
+        <el-input
+          class="mb-3"
+          placeholder="Bucket name"
+          v-model="bucketName"
+        />
         <el-button type="primary" @click="$router.push('explorer')">Get Started</el-button>
       </div>
     </el-card>
@@ -16,9 +20,21 @@
   export default {
     name: 'landing-page',
     components: { SystemInformation },
+    data() {
+      return {
+        bucketName: '',
+      };
+    },
     methods: {
       open(link) {
         this.$electron.shell.openExternal(link);
+      },
+    },
+    watch: {
+      bucketName() {
+        console.log(this.bucketName);
+        console.log(this.$store);
+        this.$store.dispatch('setGoogleCloudBucket', this.bucketName);
       },
     },
   };

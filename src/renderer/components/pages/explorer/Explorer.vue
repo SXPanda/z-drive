@@ -22,7 +22,20 @@
       </el-header>
       <el-main>
         <el-row :gutter="20">
-          <el-col :sm="6" :lg="3" :xl="3" v-for="(file, i) in files" :key="i">
+          <el-col :sm="6" :lg="3" :xl="2" v-for="(contents, name) in activeDirectory.folders" :key="name">
+            <a  @click="activePath += `${name}/`">
+              <el-card class="mb-3">
+                <div>
+                  <img :src="vsCodeIcons.getFolderIcon()" />
+                  <p>{{ name }}</p>
+                </div>
+              </el-card>
+            </a>
+          </el-col>
+        </el-row>
+        <hr />
+        <el-row :gutter="20">
+          <el-col :sm="6" :lg="3" :xl="2" v-for="(file, i) in activeDirectory.files" :key="i">
             <el-card class="mb-3">
               <div>
                 <img :src="vsCodeIcons.getIcon(file)" />
@@ -37,6 +50,8 @@
 </template>
 
 <script>
+import { ipcRenderer } from 'electron';
+
 import vsCodeIcons from '@/assets/third-party/vscode-icons';
 
 import {
@@ -68,7 +83,33 @@ export default {
         'swag.doc',
         'something.unknown',
       ],
+
+      activePath: '',
     };
+  },
+
+  computed: {
+    activeDirectory() {
+      const pathParts = this.activePath.split('/');
+
+      let directory = this.files;
+
+      for (let i = 0; i < pathParts.length; i += 1) {
+        if (pathParts[i]) {
+          directory = directory.folders[pathParts[i]];
+        }
+      }
+
+      return directory;
+    },
+  },
+
+  mounted() {
+    ipcRenderer.send('googlecloud/list', 'all');
+
+    ipcRenderer.on('googlecloud/list/response', (sender, response) => {
+      this.files = response;
+    });
   },
 };
 </script>

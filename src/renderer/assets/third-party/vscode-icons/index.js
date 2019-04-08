@@ -4,6 +4,8 @@ import fileTypeImage from '@/assets/third-party/vscode-icons/icons/file_type_ima
 import fileTypeSql from '@/assets/third-party/vscode-icons/icons/file_type_sql.svg';
 import fileTypeDoc from '@/assets/third-party/vscode-icons/icons/file_type_word.svg';
 
+import folderIcon from '@/assets/third-party/vscode-icons/icons/default_folder.svg';
+
 export default {
   fileIcons: {
     default: fileTypeDefault,
@@ -25,5 +27,8 @@ export default {
     }
 
     return this.fileIcons[fileType];
+  },
+  getFolderIcon() {
+    return folderIcon;
   },
 };
