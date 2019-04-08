@@ -39,7 +39,7 @@
             <a @click="onFileClick(file)">
               <el-card class="mb-3">
                 <div>
-                  <img :src="vsCodeIcons.getIcon(file)" />
+                  <img :src="getFilePreview(file)" />
                   <p>{{ file }}</p>
                 </div>
               </el-card>
@@ -61,6 +61,10 @@ import {
   faFolderOpen,
   faStar,
 } from '@fortawesome/free-solid-svg-icons';
+
+const path = require('path');
+
+const fs = require('fs');
 
 export default {
   name: 'page-explorer',
@@ -84,6 +88,14 @@ export default {
         'image.png',
         'swag.doc',
         'something.unknown',
+      ],
+
+      imageExtensions: [
+        'png',
+        'jpg',
+        'jpeg',
+        'gif',
+        'webp',
       ],
 
       activePath: '',
@@ -111,6 +123,27 @@ export default {
       console.log(this.activePath + file);
 
       ipcRenderer.send('googlecloud/download', `${this.activePath}${file}`);
+    },
+
+    getFilePreview(file) {
+      const fileType = path.extname(file).replace('.', '').toLowerCase();
+
+      if (this.imageExtensions.includes(fileType)) {
+        const imagePreview = this.getImagePreview(file);
+
+        if (imagePreview) {
+          return imagePreview;
+        }
+      }
+
+      return this.vsCodeIcons.getIcon(file);
+    },
+
+    getImagePreview(file) {
+      if (fs.existsSync(`./local/${this.activePath}${file}`)) {
+        return `./local/${this.activePath}${file}`;
+      }
+      return false;
     },
   },
 

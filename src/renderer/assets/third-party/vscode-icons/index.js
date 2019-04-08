@@ -6,6 +6,8 @@ import fileTypeDoc from '@/assets/third-party/vscode-icons/icons/file_type_word.
 
 import folderIcon from '@/assets/third-party/vscode-icons/icons/default_folder.svg';
 
+const path = require('path');
+
 export default {
   fileIcons: {
     default: fileTypeDefault,
@@ -15,12 +17,7 @@ export default {
     sql: fileTypeSql,
   },
   getIcon(fileName) {
-    const matches = fileName.match(/\.(.*)/);
-    if (!matches || matches.length < 2) {
-      return this.fileIcons.default;
-    }
-
-    const fileType = matches[1];
+    const fileType = path.extname(fileName).replace('.', '').toLowerCase();
 
     if (typeof this.fileIcons[fileType] === 'undefined') {
       return this.fileIcons.default;

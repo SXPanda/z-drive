@@ -12,7 +12,7 @@ ipcMain.on('googlecloud/download', async (event, srcFilename) => {
    */
 
   const bucketName = 'redshift-zdrive';
-  const destFilename = srcFilename;
+  const destFilename = `./local/${srcFilename}`;
 
   const destFileParts = destFilename.split('/');
 
