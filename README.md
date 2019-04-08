@@ -14,8 +14,12 @@ The Z drive client is built on the following technologies
 
 ### Developing
 
+First, load the authentication credentials (this needs to be done every time, contact me for the json file)
 ````
-npm install
+ $env:GOOGLE_APPLICATION_CREDENTIALS="Path/to/auth/file.json"
+````
+Then run the dev build
+````
 npm run dev
 ````
 
