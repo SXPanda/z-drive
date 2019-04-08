@@ -1,5 +1,7 @@
 import { app, BrowserWindow } from 'electron' // eslint-disable-line
 
+import path from 'path';
+
 import './storage';
 
 /**
@@ -23,6 +25,7 @@ function createWindow() {
     height: 563,
     useContentSize: true,
     width: 1000,
+    icon: path.join(__dirname, './assets/icons/png/64x64.png'),
   });
 
   mainWindow.loadURL(winURL);
