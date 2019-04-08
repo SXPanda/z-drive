@@ -2,7 +2,7 @@
   <el-container class="wrapper">
     <el-card class="focus-card">
       <div>
-        <img src="@/assets/third-party/logo_lockup_cloud_rgb.png" />
+        <img src="@/assets/z-drive-logo-dark.svg" class="mb-3" />
         <el-input
           class="mb-3"
           placeholder="Bucket name"
@@ -19,7 +19,9 @@
 
   export default {
     name: 'landing-page',
-    components: { SystemInformation },
+    components: {
+      SystemInformation,
+    },
     data() {
       return {
         bucketName: '',

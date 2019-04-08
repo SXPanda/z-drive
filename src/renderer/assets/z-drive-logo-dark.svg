@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="196.28838mm"
+   height="66.350784mm"
+   viewBox="0 0 196.28838 66.350784"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="z-drive-logo-dark.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient914-6">
+      <stop
+         style="stop-color:#253eaa;stop-opacity:0.98431373"
+         offset="0"
+         id="stop910" />
+      <stop
+         style="stop-color:#2ac979;stop-opacity:1"
+         offset="1"
+         id="stop912" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient914-6"
+       id="linearGradient4554-7-7-3"
+       x1="140.49644"
+       y1="133.44971"
+       x2="39.333698"
+       y2="30.68334"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.65993332,0,0,0.65993332,-22.453288,-16.47629)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="-936.95941"
+     inkscape:cy="-306.48782"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-2.9895134,-3.4199295)">
+    <circle
+       style="fill:url(#linearGradient4554-7-7-3);fill-opacity:1;stroke-width:0.16498333;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path4546-0-0-2"
+       cx="36.164906"
+       cy="36.595322"
+       r="33.175392" />
+    <g
+       aria-label="Z"
+       transform="matrix(0.26302427,0,0,0.26302427,-8.825518,-22.01332)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:'Gill Sans Nova';-inkscape-font-specification:'Gill Sans Nova';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="flowRoot825-9-3-0">
+      <path
+         d="m 227.82617,293.59516 h -108.9375 v -17.25 l 85.59375,-105.84375 h -82.40625 v -16.5 h 103.6875 v 16.78125 l -86.4375,106.3125 h 88.5 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'Gill Sans Nova';-inkscape-font-specification:'Gill Sans Nova';fill:#ffffff;fill-opacity:1"
+         id="path97"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       aria-label="drive"
+       transform="matrix(0.26302427,0,0,0.26302427,47.032552,-22.40756)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:'Gill Sans Nova';-inkscape-font-specification:'Gill Sans Nova';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot825-2-0-6-6">
+      <path
+         d="m 209.35742,293.59516 h -17.625 v -10.96875 q -7.59375,6.5625 -15.84375,10.21875 -8.25,3.65625 -17.90625,3.65625 -18.75,0 -29.8125,-14.4375 -10.96875,-14.4375 -10.96875,-40.03125 0,-13.3125 3.75,-23.71875 3.84375,-10.40625 10.3125,-17.71875 6.375,-7.125 14.8125,-10.875 8.53125,-3.75 17.625,-3.75 8.25,0 14.625,1.78125 6.375,1.6875 13.40625,5.34375 v -45.375 h 17.625 z m -17.625,-25.78125 v -60.09375 q -7.125,-3.1875 -12.75,-4.40625 -5.625,-1.21875 -12.28125,-1.21875 -14.8125,0 -23.0625,10.3125 -8.25,10.3125 -8.25,29.25 0,18.65625 6.375,28.40625 6.375,9.65625 20.4375,9.65625 7.5,0 15.1875,-3.28125 7.6875,-3.375 14.34375,-8.625 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'Gill Sans Nova';-inkscape-font-specification:'Gill Sans Nova';fill:#000000;fill-opacity:1"
+         id="path3803"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 309.38867,208.09516 h -0.9375 q -3.9375,-0.9375 -7.6875,-1.3125 -3.65625,-0.46875 -8.71875,-0.46875 -8.15625,0 -15.75,3.65625 -7.59375,3.5625 -14.625,9.28125 v 74.34375 h -17.625 V 188.87641 h 17.625 v 15.46875 q 10.5,-8.4375 18.46875,-11.90625 8.0625,-3.5625 16.40625,-3.5625 4.59375,0 6.65625,0.28125 2.0625,0.1875 6.1875,0.84375 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'Gill Sans Nova';-inkscape-font-specification:'Gill Sans Nova';fill:#000000;fill-opacity:1"
+         id="path3805"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 345.10742,171.34516 h -19.875 v -18.28125 h 19.875 z m -1.125,122.25 h -17.625 V 188.87641 h 17.625 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'Gill Sans Nova';-inkscape-font-specification:'Gill Sans Nova';fill:#000000;fill-opacity:1"
+         id="path3807"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 469.60742,188.87641 -42.375,104.71875 H 409.51367 L 367.41992,188.87641 h 19.125 l 32.4375,83.34375 32.15625,-83.34375 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'Gill Sans Nova';-inkscape-font-specification:'Gill Sans Nova';fill:#000000;fill-opacity:1"
+         id="path3809"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 578.82617,243.06391 h -77.15625 q 0,9.65625 2.90625,16.875 2.90625,7.125 7.96875,11.71875 4.875,4.5 11.53125,6.75 6.75,2.25 14.8125,2.25 10.6875,0 21.46875,-4.21875 10.875,-4.3125 15.46875,-8.4375 h 0.9375 v 19.21875 q -8.90625,3.75 -18.1875,6.28125 -9.28125,2.53125 -19.5,2.53125 -26.0625,0 -40.6875,-14.0625 -14.625,-14.15625 -14.625,-40.125 0,-25.6875 13.96875,-40.78125 14.0625,-15.09375 36.9375,-15.09375 21.1875,0 32.625,12.375 11.53125,12.375 11.53125,35.15625 z m -17.15625,-13.5 q -0.0937,-13.875 -7.03125,-21.46875 -6.84375,-7.59375 -20.90625,-7.59375 -14.15625,0 -22.59375,8.34375 -8.34375,8.34375 -9.46875,20.71875 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'Gill Sans Nova';-inkscape-font-specification:'Gill Sans Nova';fill:#000000;fill-opacity:1"
+         id="path3811"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

@@ -20,10 +20,10 @@
       <el-header class="panel">
         <h3>Folder name <router-link to="/">Home</router-link></h3>
       </el-header>
-      <el-main>
+      <el-main class="folder-view">
         <el-row :gutter="20">
           <el-col :sm="6" :lg="3" :xl="2" v-for="(contents, name) in activeDirectory.folders" :key="name">
-            <a  @click="activePath += `${name}/`">
+            <a @click="activePath += `${name}/`">
               <el-card class="mb-3">
                 <div>
                   <img :src="vsCodeIcons.getFolderIcon()" />
@@ -36,12 +36,14 @@
         <hr />
         <el-row :gutter="20">
           <el-col :sm="6" :lg="3" :xl="2" v-for="(file, i) in activeDirectory.files" :key="i">
-            <el-card class="mb-3">
-              <div>
-                <img :src="vsCodeIcons.getIcon(file)" />
-                <p>{{ file }}</p>
-              </div>
-            </el-card>
+            <a @click="onFileClick(file)">
+              <el-card class="mb-3">
+                <div>
+                  <img :src="vsCodeIcons.getIcon(file)" />
+                  <p>{{ file }}</p>
+                </div>
+              </el-card>
+            </a>
           </el-col>
         </el-row>
       </el-main>
@@ -104,6 +106,14 @@ export default {
     },
   },
 
+  methods: {
+    onFileClick(file) {
+      console.log(this.activePath + file);
+
+      ipcRenderer.send('googlecloud/download', `${this.activePath}${file}`);
+    },
+  },
+
   mounted() {
     ipcRenderer.send('googlecloud/list', 'all');
 
@@ -114,6 +124,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import '@/assets/variables.scss';
 
+.folder-view {
+  background-color: $dark-alt-background-color;
+}
 </style>
